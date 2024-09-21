@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annasbite</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="medium.css" media="(min-width: 80rem)" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav id ="navbar">
+      <img id="logo" src="./assests/logos/Anns.png" alt="Logo" />
+      <div class="burger" onclick="toggleNav()">&#9776;</div>
+      <div class="nav-links" id="navLinks">
+        <a href="./index.html"><span>Home</span></a>
+       <a href="#menu"> <span>Menu</span></a>
+        <a href="#reservation"><span>Reservation</span></a>
+        <a href="#menu"><span>Gallery</span></a>
+       <a href="index.html"> <span>About</span></a>
+       <a href="#footer"> <span>Contact</span></a>
+      </div>
+    </nav>
+    <section id="hero">
+      <div id="hero-overlay">
+        <header>
+          <span id="welcome" class="courgette-regular">Welcome to</span>
+          <span id="anns" class="poppins-bold">ANN'S BITE</span>
+        </header>
+        <button class="menu-button">Look Menu</button>
+      </div>
+    </section>
+    <section id="about">
+      <div id="about-text">
+        <div class="sub-header">
+          <span class="courgette-regular">Italain Restaurant</span>
+          <span class="poppins-bold">Welcome</span>
+        </div>
+        <p>
+          Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est.
+          Sed<br />
+          fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac
+          facilisis<br />
+          ligula sem id neque.
+        </p>
+        <div id="about-link">
+          <a href="">Our story <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <img
+        id="about-image"
+        src="./assests/images/salmon.jpg"
+        alt="About image"
+      />
+    </section>
+
+    <section id="discover">
+      <div id="discover_overlay">
+        <div class="sub-header">
+          <span class="courgette-regular">Discover</span>
+          <span id="ann" class="poppins-bold">ANNS BITE</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="screens">
+      <div class="romantic">
+        <img
+          src="./assests/images/romantic.jpeg"
+          width="400"
+          height="200"
+          alt=""
+        />
+        <h4>ROMANTIC RESTAURANT</h4>
+        <p>
+          Planning a romantic night with loved ones? We have 
+          the perfect settings just for you.
+        </p>
+        <a href="">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="delicious">
+        <img src="./assests/images/meat.avif" width="400" height="200" alt="" />
+        <h4>DELICIOUS FOOD</h4>
+        <p>
+          Authentic, well-seasoned, absolutely delectable and perfectly prepared
+           flavours are our culinary hallmark.
+        </p>
+        <a href="">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="wines">
+        <img
+          src="./assests/images/red wine.jpg"
+          width="400"
+          height="200"
+          alt=""
+        />
+        <h4>RED WINES YOU LOVE</h4>
+        <p>
+          If you adorn the ligula eget tortor tempor, you are at the right place.
+        </p>
+        <a href="">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+    <section id="menu">
+      <div class="sub-header">
+        <span class="courgette-regular red-text">Discover</span>
+        <span class="poppins-bold black-text">OUR MENU</span>
+      </div>
+       <div class="grid-container">
+          <div class="group1">
+            <div class="grid-container-image">
+          <img src="./assests/images/lobster1.avif" alt="lunch" />
+          <button type="submit">LUNCH</button>
+          </div></div>
+          <div class="group1">
+            <div class="grid-container-image">
+          <img src="./assests/images/dinner.jpg" alt="dinner" />
+          </div><button type="submit">DINNER</button>
+          </div>
+          <div class="group3">
+            <div class="grid-container-image">
+          <img src="./assests/images/drinks.avif" alt="drinks img" />
+          </div><button type="submit">DRINK</button>
+          </div>
+          <div class="group3">
+            <div class="grid-container-image">
+          <img src="./assests/images/meal.webp" alt="starter img" />
+          </div><button type="submit">STARTERS</button>
+          </div>
+          <div class="group2">
+            <div class="grid-container-image">
+          <img src="./assests/images/happy-hour.jpg" alt="happy-hour img" />
+          </div><button type="submit">HAPPY HOUR</button>
+          </div>
+          <div class="group3">
+            <div class="grid-container-image">
+          <img src="./assests/images/hero.jpg" alt="desert img" />
+          </div><button type="submit">DESSERT</button>
+          </div>
+        </div>
+    </section>
+
+    <section id="video-sec">
+      <video
+        id="video"
+        autoplay
+        muted
+        loop
+        src="./assests/video/2620043-uhd_3840_2160_25fps.mp4"
+      ></video>
+      <div id="video-overlay">
+        <div class="sub-header">
+          <span class="courgette-regular">Italain Restaurant</span>
+          <span class="poppins-bold">Welcome</span>
+        </div>
+      </div>
+    </section>
+    <section id="reservation">
+      <div id="section1">
+        <div class="sub-header">
+          <span class="courgette-regular">Reservation</span>
+          <span class="poppins-bold">BOOK TABLE</span>
+        </div>
+
+        <form>
+          <div id="input-grid">
+            <span class="form-item">
+              <label for="date">At your place</label>
+              <input id="date" type="date" />
+            </span>
+            <span class="form-item">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Name" />
+            </span>
+            <span class="form-item">
+              <label for="time">Time</label>
+              <input id="time" type="time" />
+            </span>
+            <span class="form-item">
+              <label for="phone">Phone</label>
+              <input id="phone" type="tel" placeholder="Phone" />
+            </span>
+            <span class="form-item">
+              <label for="people">People</label>
+              <input id="people" type="number" />
+            </span>
+            <span class="form-item">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" placeholder="E-mail" />
+            </span>
+          </div>
+          <button id="table">Book Table</button>
+        </form>
+      </div>
+      <img src="./assests/images/reserve.jpeg" alt="reservation image" />
+    </section>
+    <section id="screens">
+      <div class="romantic">
+        <img
+          src="./assests/images/romantic.jpeg"
+          width="400"
+          height="200"
+          alt=""
+        />
+        <h4>ROMANTIC RESTAURANT</h4>
+        <p>
+          Planning a romantic night with loved ones? We have 
+          the perfect settings just for you.
+        </p>
+        <a href="">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="delicious">
+        <img src="./assests/images/meat.avif" width="400" height="200" alt="" />
+        <h4>DELICIOUS FOOD</h4>
+        <p>
+          Authentic, well-seasoned, absolutely delectable and perfectly prepared
+           flavours are our culinary hallmark.
+        </p>
+        <a href="">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="wines">
+        <img
+          src="./assests/images/red wine.jpg"
+          width="400"
+          height="200"
+          alt=""
+        />
+        <h4>RED WINES YOU LOVE</h4>
+        <p>
+          If you adorn the ligula eget tortor tempor, you are at the right place.
+        </p>
+        <a href="">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>About Us</h4>
+              <p>
+                We are a premium restaurant offering the best culinary
+                experiences. <br> <br> <br> <b>Opening Time </b><br><br> 09:30 AM – 11:00 PM
+                <br>Every Day <br> <br>
+              <div class="social-icons"> 
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+              </p>
+            </div>
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contact Us</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i> GA-0722-303, 7 mboumu
+                  st.
+                </li>
+                <li><i class="fas fa-phone-alt"></i> +233 243 999 631</li>
+                <li><i class="fas fa-envelope"></i> info@annsbite.com</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Gallery</h4>
+              <div class="gallery">
+                <img
+                  src="./assests/images/fimage.webp"
+                  alt="Gallery Image 1"
+                />
+                <img
+                  src="./assests/images/fimage1.webp"
+                  alt="Gallery Image 2"
+                />
+                <img
+                  src="./assests/images/fimage2.webp"
+                  alt="Gallery Image 3"
+                />
+                <img
+                  src="./assests/images/fimage3.webp"
+                  alt="Gallery Image 4"
+                />
+                <img
+                  src="./assests/images/fimage4.webp"
+                  alt="Gallery Image 5"
+                />
+                <img
+                  src="./assests/images/fimage5.webp"
+                  alt="Gallery Image 6"
+                />
+                <img
+                  src="./assests/images/fimage6.webp"
+                  alt="Gallery Image 7"
+                />
+                <img
+                  src="./assests/images/fimage7.webp"
+                  alt="Gallery Image 8"
+                />
+                <img
+                  src="./assests/images/fimage8.webp"
+                  alt="Gallery Image 9"
+                />
+                <img
+                  src="./assests/images/fimage9.webp"
+                  alt="Gallery Image 10"
+                />
+                <img
+                  src="./assests/images/fimage10.webp"
+                  alt="Gallery Image 11"
+                />
+                <img
+                  src="./assests/images/fimage11.webp"
+                  alt="Gallery Image 12"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            
+            <p>&copy; 2024 Ann's Bite. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
